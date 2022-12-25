@@ -17,7 +17,7 @@ fn main() {
 
         match stream.unwrap().write_all(response.as_bytes()) {
             Ok(_) => {
-                println!("Replied");
+                println!("Replied with {}", response);
             }
             Err(e) => {
                 println!("error: {}", e);
